@@ -49,10 +49,10 @@
         "Toys and other plastics" : 3.12 
     },
     "ServicesFactor" : {
-        "Healthcare" : 0.15, 
-        "Home repair and maintenance" : 0.15, 
-        "Education and entertainment (beyond school)" : 0.15, 
-        "Other services (legal, etc.)" : 0.15 
+        "Healthcare" : 0.000015, 
+        "Home repair and maintenance" : 0.000015, 
+        "Education and entertainment (beyond school)" : 0.000015, 
+        "Other services (legal, etc.)" : 0.000015 
     },
     "WasteFactor" : {
         "Wastewater" : 0.001, 
