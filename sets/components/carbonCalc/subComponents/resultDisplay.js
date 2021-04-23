@@ -16,7 +16,7 @@ export default function ResultDisplay(props) {
                     <div className="flex items-center -mt-4">
                         <div className="shadow w-1/2 bg-green-400 rounded-lg py-2 px-16">
                         </div>
-                        <p className="text-3xl ml-auto"><b>{(props.userTotal/1000).toFixed(2)}</b> tons of CO2</p>
+                        <p className="text-3xl ml-auto"><b>{(props.userTotal/1000).toFixed(2)}</b> tonnes of CO2</p>
                     </div>
 
                     <p className="text-xl mb-0">World average</p>
@@ -59,23 +59,24 @@ export default function ResultDisplay(props) {
     const PieChartContent = (props) => {
         return (
             <div className = " w-8/12 ml-auto mr-auto">
-            <PieChart
-                label={({ dataEntry }) => dataEntry.title}
-                labelPosition = {110}
-                labelStyle={(index) => ({
-                    fontSize: '3px',
-                  })}
-                radius = {35}
-                animate
-                data = {[
-                {title: 'Housing', value: props.values[0], color: '#D1D5DB'},
-                {title: 'Food', value: props.values[1], color: '#FBBF24'}, 
-                {title: 'Transit', value: props.values[2], color: '#F9A8D4'},
-                {title: 'Goods', value: props.values[3], color: '#93C5FD'},
-                {title: 'Services', value: props.values[4], color: '#2563EB'},
-                {title: 'Waste', value: props.values[5], color: '#34D399'},
-            ]}
-            />
+                <h2 className = "ml-auto mr-auto -mb-24 text-center">Distribution of your emissions</h2>
+                <PieChart
+                    label={({ dataEntry }) => dataEntry.title}
+                    labelPosition = {110}
+                    labelStyle={(index) => ({
+                        fontSize: '3px',
+                    })}
+                    radius = {35}
+                    animate
+                    data = {[
+                    {title: 'Housing', value: props.values[0], color: '#D1D5DB'},
+                    {title: 'Food', value: props.values[1], color: '#FBBF24'}, 
+                    {title: 'Transit', value: props.values[2], color: '#F9A8D4'},
+                    {title: 'Goods', value: props.values[3], color: '#93C5FD'},
+                    {title: 'Services', value: props.values[4], color: '#2563EB'},
+                    {title: 'Waste', value: props.values[5], color: '#34D399'},
+                ]}
+                />
             </div>
             
             // <div className = "w-1/3 ml-auto mr-auto">
