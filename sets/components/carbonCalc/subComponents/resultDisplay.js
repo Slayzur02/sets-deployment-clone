@@ -107,7 +107,7 @@ export default function ResultDisplay(props) {
 
             <PieChartContent values={props.categoryValues} />
 
-            <div className="w-full flex items-center mt-6">
+            <div className="w-full flex items-center">
                 <button onClick={props.previousCategory}
                     className="text-xl text-white bg-green-400 px-8 py-2 rounded-sm border-transparent
                 transition duration-200 ease-in-out
